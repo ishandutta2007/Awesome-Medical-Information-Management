@@ -68,9 +68,9 @@ Below is a curated summary of commercial SaaS platforms for global Medical Infor
 
 While validated end-to-end MI platforms for regulated pharma are commercial, several high-quality open-source projects provide key infrastructure, EHR capabilities, workflow management, and service desk intake.
 
-The projects below are sorted by **GitHub Stars (Descending)**. Click on any star badge to visit the stargazers page for that repository!
+The projects below are sorted by **GitHub_Stars (Descending)**. Click on any Stars_Badge to visit the stargazers page for that repository!
 
-| 📦 Repository & Project | 🌟 GitHub Stars | 🏷️ Category & Description |
+| 📦 Repository & Project | 🌟 GitHub_Stars | 🏷️ Category & Description |
 | :--- | :--- | :--- |
 | **[odoo/odoo](https://github.com/odoo/odoo)** | [<img src="https://img.shields.io/github/stars/odoo/odoo?style=social&color=white" alt="Odoo Stars"/>](https://github.com/odoo/odoo/stargazers) | **Open ERP & Healthcare** • Flexible open-source ERP with custom medical records, ticketing, and document management modules. |
 | **[frappe/erpnext](https://github.com/frappe/erpnext)** | [<img src="https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white" alt="ERPNext Stars"/>](https://github.com/frappe/erpnext/stargazers) | **ERP & Healthcare Modules** • Full-featured open-source ERP with built-in healthcare, quality management, and inquiry handling capabilities. |
