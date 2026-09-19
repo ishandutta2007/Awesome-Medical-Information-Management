@@ -1,0 +1,67 @@
+<svg width="900" height="220" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#311042" />
+    </linearGradient>
+    
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" rx="16" fill="url(#bgGradient)" />
+
+  <!-- Animated / Dynamic background elements (positioned away from title text) -->
+  <g opacity="0.25">
+    <!-- Pulsing ECG Waveform at bottom -->
+    <path d="M 50 170 L 200 170 L 220 140 L 240 200 L 260 120 L 280 180 L 300 170 L 850 170" fill="none" stroke="#06b6d4" stroke-width="3" stroke-dasharray="800" stroke-dashoffset="800">
+      <animate attributeName="stroke-dashoffset" values="800;0" dur="4s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Floating particles/nodes -->
+    <circle cx="100" cy="50" r="4" fill="#38bdf8">
+      <animate attributeName="cy" values="50;40;50" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="800" cy="60" r="6" fill="#818cf8">
+      <animate attributeName="cy" values="60;75;60" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="750" cy="150" r="5" fill="#c084fc">
+      <animate attributeName="cy" values="150;135;150" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="150" cy="130" r="3" fill="#38bdf8">
+      <animate attributeName="cy" values="130;142;130" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Foreground Title and Subtitle (High contrast, clearly visible) -->
+  <g text-anchor="middle">
+    <!-- Main Title -->
+    <text x="450" y="95" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="800" font-size="34" fill="url(#textGrad)" filter="url(#glow)" letter-spacing="0.5">
+      Awesome Medical Information Management
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="450" y="138" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="400" font-size="16" fill="#e2e8f0" letter-spacing="0.2">
+      Curated Ecosystem of SaaS Platforms &amp; Open-Source Projects for Life Sciences &amp; Pharma
+    </text>
+
+    <!-- Decorative pill badge -->
+    <rect x="365" y="158" width="170" height="26" rx="13" fill="#ffffff" fill-opacity="0.1" stroke="#818cf8" stroke-width="1" />
+    <text x="450" y="175" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="600" font-size="12" fill="#38bdf8">
+      🏥 Medical Affairs &amp; MI
+    </text>
+  </g>
+</svg>
